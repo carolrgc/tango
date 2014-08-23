@@ -76,6 +76,8 @@ STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
+LOGIN_URL = '/rango/login/'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     STATIC_PATH,
@@ -136,6 +138,8 @@ INSTALLED_APPS = (
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+SESSION_FILE_PATH = '/tmp/'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
